@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+
+<body onload="init()">
+    <nav>
+        <a href="index.html">Home Page</a>
+    </nav>
+    <header>
+        <h1>Map</h1>
+    </header>
+    <main>
+        <div id="map" style="width:100%;height:500px;"></div>
+        <buttun onclick=" getPosition()"><img src="img/my-location.png" style="height: 50px;"></buttun>
+
+        <table class="places" border="1">
+            <thead>
+                <td>id</td>
+                <td>name</td>
+                <td>lat</td>
+                <td>lng</td>
+                <td>delete</td>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/services/storageService.js"></script>
+    <script src="js/services/utilService.js"></script>
+    <script src="js/services/placeService.js"> </script>
+    <script src="js/map-controller.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgFp1R44SRxJ_mX-834hlM6A5a9DHBv9A&callback=initMap">
+        </script>
+
+</body>
+
+</html>
+<!-- restrict -->
+<!-- AIzaSyDgFp1R44SRxJ_mX-834hlM6A5a9DHBv9A -->
+
+
+<!-- AIzaSyDkDjE0b1st7v33U8J1_LU3Ph2Zk1TQR_c -->

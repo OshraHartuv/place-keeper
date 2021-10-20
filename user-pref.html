@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your preferences</title>
+</head>
+
+<body>
+    <header>
+        <h1>Your preferences</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home Page</a>
+    </nav>
+
+    <main>
+        <form id="frmPref">
+            <table>
+                <tr>
+                    <td for="BackgrounColor">Choose your home page backgroud color:</td>
+                    <td><input type="color" id="BackgrounColor" name="BackgrounColor" form="frmPref" value="#f7f7f7"
+                            onchange="onBackgroundColorPref(value)" /></td>
+                </tr>
+                <tr>
+                    <td for="textColor">Choose your home page Text color:</td>
+                    <td><input type="color" id="textColor" name="textColor" form="frmPref" value="#121212"
+                            onchange="onTextColorPref(value)" /></td>
+                </tr>
+                <tr>
+                    <td><label for="birthDate">Date of Birth:</label></td>
+                    <td><input type="date" id="birthDate" name="birthDate" form="frmPref" /></td>
+                </tr>
+                <tr>
+                    <td><label for="birthTime">Time of Birth:</label></td>
+                    <td><input type="time" id="birthTime" name="birthTime" form="frmPref" /></td>
+                </tr>
+            </table>
+           <input type="submit" formnovalidate value="Save" />
+        </form>
+    </main>
+
+
+
+    <script src="js/services/utilService.js"></script>
+    <script src="js/services/storageService.js"></script>
+    <script src="js/services/userPrefService.js"></script>
+    <script src="js/services/placeService.js"></script>
+    <script src="js/userPref-controller.js"></script>
+</body>
+
+</html>
